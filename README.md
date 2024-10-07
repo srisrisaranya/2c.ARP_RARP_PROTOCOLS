@@ -16,7 +16,7 @@ stored.
 4. Read the IP address which is send by the client.
 5. Map the IP address with its MAC address and return the MAC address to client.
 P
-## PROGRAM - ARP
+## PROGRAM 
 # CLIENT
 ```
 import socket
@@ -33,10 +33,10 @@ if ack:
     print(ack)
     c.close()
 ```
-## OUPUT - ARP
+## OUPUT 
 ![image](https://github.com/user-attachments/assets/f6044c0c-8a0c-4ce4-b97e-4e9db201e4f5)
 
-## PROGRAM - RARP
+
 # SERVER
 ```
 import socket
@@ -46,7 +46,7 @@ print(s.getsockname())
 print(s.recv(1024).decode())
 s.send("acknowledgement received from the server".encode())
 ```
-## OUPUT -RARP
+## OUPUT 
 ![image](https://github.com/user-attachments/assets/84628318-3782-42ff-87c5-6f50a65c594b)
 
 ## RESULT
